@@ -190,38 +190,38 @@ CSV: /data/loto7hh_4630_k46.csv | Izvlacenja: 4630 | tezine: talas=0.7 freq=0.3
 
 Top 10 brojeva po kombinovanom skoru (tezinski talas + frekvencija):
   22  skor=0.8470146085  freq=0.02626  (pojava=851)
-  31  skor=0.8333333333  freq=0.02561  (pojava=830)
+   x  skor=0.8333333333  freq=0.02561  (pojava=830)
   03  skor=0.7294195195  freq=0.02546  (pojava=825)
-  37  skor=0.7070035034  freq=0.02654  (pojava=860)
+   y  skor=0.7070035034  freq=0.02654  (pojava=860)
   14  skor=0.6745677823  freq=0.02496  (pojava=809)
-  26  skor=0.6704402833  freq=0.02681  (pojava=869)
+   z  skor=0.6704402833  freq=0.02681  (pojava=869)
   09  skor=0.6650919779  freq=0.02601  (pojava=843)
-  02  skor=0.6293915217  freq=0.02542  (pojava=824)
+   x  skor=0.6293915217  freq=0.02542  (pojava=824)
   21  skor=0.6231011851  freq=0.02549  (pojava=826)
-  29  skor=0.6031615960  freq=0.02616  (pojava=848)
+   y  skor=0.6031615960  freq=0.02616  (pojava=848)
 
 
 Tabela pravih frekvencija (opadajuce po freq, pa po broju):
   broj | pojava |   udeo
   -----+--------+--------
    08  |   910  | 0.02808
-   23  |   905  | 0.02792
+    x  |   905  | 0.02792
    34  |   873  | 0.02694
-   26  |   869  | 0.02681
+    y  |   869  | 0.02681
    37  |   860  | 0.02654
-   11  |   860  | 0.02654
+    z  |   860  | 0.02654
    32  |   857  | 0.02644
-   33  |   854  | 0.02635
+    x  |   854  | 0.02635
    22  |   851  | 0.02626
-   39  |   849  | 0.02620
+    y  |   849  | 0.02620
    29  |   848  | 0.02616
-   10  |   845  | 0.02607
+    z  |   845  | 0.02607
    35  |   843  | 0.02601
-   09  |   843  | 0.02601
+    x  |   843  | 0.02601
    38  |   842  | 0.02598
-   07  |   842  | 0.02598
+    y  |   842  | 0.02598
    24  |   840  | 0.02592
-   25  |   839  | 0.02589
+    z  |   839  | 0.02589
    16  |   837  | 0.02583
    31  |   830  | 0.02561
    13  |   828  | 0.02555
@@ -247,16 +247,16 @@ Tabela pravih frekvencija (opadajuce po freq, pa po broju):
 
 
 Predlozene kombinacije (rangirane po skoru kombinacije):
-  01. 03 06 22 26 29 36 37  skor_komb=4.3690554210
-  02. 02 09 19 22 30 31 38  skor_komb=4.1325227180
-  03. 07 09 14 15 21 24 31  skor_komb=3.9970385748
-  04. 08 09 19 21 26 30 37  skor_komb=3.9622010365
-  05. 05 06 13 21 22 23 31  skor_komb=3.8252379334
-  06. 06 13 15 23 26 30 31  skor_komb=3.5941731725
-  07. 01 03 08 12 13 19 38  skor_komb=3.5422842878
-  08. 16 17 19 22 27 37 39  skor_komb=3.3724787688
-  09. 09 13 21 28 29 33 38  skor_komb=3.3371805239
-  10. 04 10 12 17 31 34 38  skor_komb=3.2695952049
+  01. 03 x 22 y 29 z 37  skor_komb=4.3690554210
+  02. 02 x 19 y 30 z 38  skor_komb=4.1325227180
+  03. 07 x 14 y 21 z 31  skor_komb=3.9970385748
+  04. 08 x 19 y 26 z 37  skor_komb=3.9622010365
+  05. 05 x 13 y 22 z 31  skor_komb=3.8252379334
+  06. 06 x 15 y 26 z 31  skor_komb=3.5941731725
+  07. 01 x 08 y 13 z 38  skor_komb=3.5422842878
+  08. 16 x 19 y 27 z 39  skor_komb=3.3724787688
+  09. 09 x 21 y 29 z 38  skor_komb=3.3371805239
+  10. 04 x 12 y 31 z 38  skor_komb=3.2695952049
 
 Sacuvano: /Tesla/tesla_pycharge_2B.txt
 """
@@ -265,9 +265,9 @@ Sacuvano: /Tesla/tesla_pycharge_2B.txt
 
 """
 pycharge motor je dao potpuno drugačiji profil od 1 i 2A.
-Top lista je drugačija: 22, 31, 03, 37, 14, 26...
+Top lista je drugačija: 22, x, 03, y, 14, z...
 14 je opet jak iako ima malu frekvenciju (809) — dobar znak da talasni deo zaista menja rang.
-Favorit 2B je: 03 06 22 26 29 36 37 sa skor_komb=4.3690554210.
+Favorit 2B je: 03 x 22 y 29 z 37 sa skor_komb=4.3690554210.
 
 Grupa 1: ručni SLW
 2A: k-wave FDTD
@@ -319,23 +319,25 @@ Mere polja: max S ≈ 0.99999, max |E_x| ≈ 17.60, ukupna energija ≈ 50591.86
 
 To je mnogo oštrije od Tesla 1 (E_x ≈ 0.10) — pycharge pravi jak gradijent, zato su rezultati drugačiji.
 
-Top brojevi (talas + freq, 0.7/0.3): 22 (0.847) · 31 (0.833) · 03 (0.729) · 37 (0.707) · 14 (0.675) · 26 (0.670) · 09 (0.665) · 02 (0.629) · 21 (0.623) · 29 (0.603)
+Top brojevi (talas + freq, 0.7/0.3): 22 (0.847) · x (0.833) · 03 (0.729) · y (0.707) · 14 (0.675) · z (0.670) · 09 (0.665) · x (0.629) · 21 (0.623) · y (0.603)
 
-22, 31, 03 skaču visoko, iako nisu najjači frekvencijski brojevi → EM potencijal daje drugačiji talasni potpis.
+22, x, 03 skaču visoko, iako nisu najjači frekvencijski brojevi → EM potencijal daje drugačiji talasni potpis.
 14 je opet u top 10, kao i kod 2A → to je zanimljiv stabilan ne-frekvencijski kandidat.
 34, koji je dominirao u Tesla 1 i 2A, kod 2B više nije top 10 → pycharge motor zaista daje zaseban signal.
 37 i 26 su podržani i frekvencijom i talasom, pa su „kompromisno" jaki.
-Favorit kombinacija: 03 06 22 26 29 36 37 (skor_komb = 4.3691). Ovo je trenutno najviši skor kombinacije od sve tri verzije, ali treba paziti: skale nisu direktno fizički uporedive među motorima, poredi se pre svega rang unutar modela.
+Favorit kombinacija: 03 x 22 y 29 z 37 (skor_komb = 4.3691). 
+Ovo je trenutno najviši skor kombinacije od sve tri verzije, 
+ali treba paziti: skale nisu direktno fizički uporedive među motorima, poredi se pre svega rang unutar modela.
 
 Zaključak: 
 2B je najagresivniji od prve tri verzije. 
 Daje oštrije polje i drugačiju selekciju brojeva. 
 Posebno su zanimljivi preseci: 
-14 se pojavljuje i u 2A i u 2B, a 37, 31, 22 dobijaju jak signal iz EM pristupa.
+14 se pojavljuje i u 2A i u 2B, a 37, x, 22 dobijaju jak signal iz EM pristupa.
 
 stabilan kroz 1/2A: 34
 stabilan kroz 2A/2B: 14
-jak u 2B: 22, 31, 03, 37
+jak u 2B: 22, x, 03, y
 """
 
 
